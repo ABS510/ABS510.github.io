@@ -6,11 +6,11 @@ const projectsData = [
       title: 'Generative Adversial Network (GAN) Variants for Image Generation',
       shortName: 'Generative Adversarial Networks',
       path: "/project/GAN",
-      image: "/GAN/cat7.png",
+      image: "GAN/cat7.png",
       content: [
         {
           type: 'Images', 
-          images: ['/GAN/cat1.png', '/GAN/cat2.png','/GAN/cat3.png','/GAN/cat4.png','/GAN/cat5.png','/GAN/cat6.png'],
+          images: ['GAN/cat1.png', 'GAN/cat2.png','GAN/cat3.png','GAN/cat4.png','GAN/cat5.png','GAN/cat6.png'],
           caption: "Evolution of GAN generations over multiple epochs",
           height:0.9, // multiplier by 20vh
           smallScreenHeight:1, // multplier by 15vh
@@ -26,7 +26,7 @@ const projectsData = [
         },
         {
           type: 'Images',
-          images: ['/GAN/GAN_network.png'],
+          images: ['GAN/GAN_network.png'],
           caption: 'GAN architecture',
           height:1.6,
           smallScreenHeight:1.3,
@@ -48,7 +48,7 @@ const projectsData = [
         },
         {
           type: "Images", 
-          images: ['/GAN/cat7.png', '/GAN/flower.png'],
+          images: ['GAN/cat7.png', 'GAN/flower.png'],
           caption: "WGAN generated cats and flowers after multiple epochs of training.",
           height: 1.4,
           smallScreenHeight: 1.2
@@ -60,7 +60,7 @@ const projectsData = [
       title: 'Key Point Matching, Fundamental Matrix Estimation, and Stereo Depth Estimation',
       shortName: 'Key Point Matching',
       path: "/project/KPM",
-      image: "/KPM/stereoDepth.png",
+      image: "KPM/stereoDepth.png",
       content: [
         {
           type: 'Text', 
@@ -89,7 +89,7 @@ const projectsData = [
         },
         {
           type: 'Images',
-          images: ['/KPM/KPM.png'],
+          images: ['KPM/KPM.png'],
           caption: 'Key Point Matching using SIFT and Lowe\'s Ratio Test',
           height:1.6,
           smallScreenHeight:1,
@@ -118,7 +118,7 @@ const projectsData = [
         },
         {
           type: 'Images',
-          images: ['/KPM/FundMat1.png', '/KPM/FundMat2.png'],
+          images: ['KPM/FundMat1.png', 'KPM/FundMat2.png'],
           caption: 'Epipolar Lines from calculated Fundamental Matrix. The intersection of lines in \
           one image is the camera location of the other image',
           height:1.6,
@@ -157,7 +157,7 @@ const projectsData = [
         },
         {
           type: "Images", 
-          images: ['/KPM/stereoOrig.png', '/KPM/stereoDepth.png'],
+          images: ['KPM/stereoOrig.png', 'KPM/stereoDepth.png'],
           caption: "Depth Estimation using Stereo. Lighter yellow colour represents portions of the image \
           closer, while darker green is further away.",
           height: 1.6,
@@ -170,11 +170,11 @@ const projectsData = [
       title: 'Deep Q-Learning for Atari Games',
       shortName: 'Deep Q-Learning',
       path: "/project/dqn",
-      image: '/DQN/BreakOut.gif',
+      image: 'DQN/BreakOut.gif',
       content: [
         {
           type: 'Images',
-          images: ['/DQN/BreakOut.gif'],
+          images: ['DQN/BreakOut.gif'],
           caption: 'My DDQN model playing the Atari Game Breakout, after training for 2000 episodes.',
           height:2.4,
           smallScreenHeight:2.8,
@@ -198,7 +198,7 @@ const projectsData = [
         },
         {
           type: 'Images',
-          images: ['/DQN/QL_Bell.JPG'],
+          images: ['DQN/QL_Bell.JPG'],
           caption: 'Equation for Q-Learning Update',
           height:1.6,
           smallScreenHeight:1,
@@ -216,7 +216,7 @@ const projectsData = [
         },
         {
           type: 'Images',
-          images: ['/DQN/DQNvsQL.png'],
+          images: ['DQN/DQNvsQL.png'],
           caption: 'Deep Q-Learning vs Q-Learning',
           height:2,
           smallScreenHeight:2,
@@ -245,11 +245,11 @@ const projectsData = [
       title: 'What\'s for Dinner?',
       shortName: 'What\'s for Dinner?',
       path: "/project/db",
-      image: '/DB/DB_plan.png',
+      image: 'DB/DB_plan.png',
       content: [
         {
           type: 'Images',
-          images: ['/DB/guestSearch.png'],
+          images: ['DB/guestSearch.png'],
           caption: 'Home screen for What\'s for Dinner?',
           height:1.6,
           smallScreenHeight:1,
@@ -271,7 +271,7 @@ const projectsData = [
         },
         {
           type: 'Images',
-          images: ['/DB/DB_plan.png'],
+          images: ['DB/DB_plan.png'],
           caption: 'Database Relationship Diagram',
           height:2.5,
           smallScreenHeight:1.8,
@@ -291,7 +291,7 @@ const projectsData = [
         },
         {
           type: 'Images',
-          images: ['/DB/searchRes.png'],
+          images: ['DB/searchRes.png'],
           caption: 'An example of a search result, where the user searched eggs and butter',
           height:2,
           smallScreenHeight:1.6,
@@ -318,7 +318,7 @@ const projectsData = [
         },
         {
           type: 'Images',
-          images: ['/DB/exampleRecipe.png', '/DB/comments.png'],
+          images: ['DB/exampleRecipe.png', 'DB/comments.png'],
           caption: 'An example of a recipe screen',
           height:2,
           smallScreenHeight:1.6,

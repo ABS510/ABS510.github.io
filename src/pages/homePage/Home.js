@@ -1,6 +1,7 @@
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import "./Home.css"
+import imagePath from '../../ghUtil';
 
 function Home({dark}) {
 
@@ -24,7 +25,7 @@ function Home({dark}) {
         <div className="container">
           <div className="content">
             <div className="home-image-container">
-              <img className="profile-image" src="beach.png" alt="Your Name" />   
+              <img className="profile-image" src={imagePath("beach.png")} alt="Your Name" />   
             </div>
             <div className="titles-container">
               <div>

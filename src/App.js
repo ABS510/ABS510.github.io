@@ -1,11 +1,13 @@
 import React, {useState, useRef} from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
 import Home from './pages/homePage/Home';
 import "./App.css"
 import Project from './pages/projectPages/Project';
 import ProjectListPage from './pages/ProjectListPage/ProjectListPage';
 import projectsData from './Data/projectData';
+import imagePath from './ghUtil';
+
 
 const App = () => {
 
@@ -44,7 +46,7 @@ const App = () => {
             <span className="slider"></span>
           </label>
         </div>
-        <Sidebar ref={SidebarRef} routes={routes} pic='/beach.png' dropDownProps={dropDownProps} dark={darkMode} toggleSwitchRef={toggleSwitchRef}/>
+        <Sidebar ref={SidebarRef} routes={routes} pic={imagePath('/beach.png')} dropDownProps={dropDownProps} dark={darkMode} toggleSwitchRef={toggleSwitchRef}/>
         <div className="main-content">
           <Routes>
             <Route exact path="/" element={<Home dark={darkMode}/>} />
