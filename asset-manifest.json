@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ABS510.github.io/static/css/main.08a8d053.css",
-    "main.js": "/ABS510.github.io/static/js/main.6b94682d.js",
-    "static/js/787.670c1f18.chunk.js": "/ABS510.github.io/static/js/787.670c1f18.chunk.js",
-    "index.html": "/ABS510.github.io/index.html",
-    "main.08a8d053.css.map": "/ABS510.github.io/static/css/main.08a8d053.css.map",
-    "main.6b94682d.js.map": "/ABS510.github.io/static/js/main.6b94682d.js.map",
-    "787.670c1f18.chunk.js.map": "/ABS510.github.io/static/js/787.670c1f18.chunk.js.map"
+    "main.css": "/abs510.github.io/static/css/main.08a8d053.css",
+    "main.js": "/abs510.github.io/static/js/main.4efe5dde.js",
+    "static/js/787.670c1f18.chunk.js": "/abs510.github.io/static/js/787.670c1f18.chunk.js",
+    "index.html": "/abs510.github.io/index.html",
+    "main.08a8d053.css.map": "/abs510.github.io/static/css/main.08a8d053.css.map",
+    "main.4efe5dde.js.map": "/abs510.github.io/static/js/main.4efe5dde.js.map",
+    "787.670c1f18.chunk.js.map": "/abs510.github.io/static/js/787.670c1f18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08a8d053.css",
-    "static/js/main.6b94682d.js"
+    "static/js/main.4efe5dde.js"
   ]
 }
