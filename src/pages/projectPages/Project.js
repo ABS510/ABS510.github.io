@@ -2,7 +2,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import "./Project.css"
-import imagePath from '../../ghUtil';
 
 const Project = ({ title, content, dark }) => {
 
@@ -46,7 +45,7 @@ const Project = ({ title, content, dark }) => {
               <>
                 <div className="image-list">
                   {item.images.map((imageUrl, imgIndex) => (
-                    <img key={imgIndex} src={imagePath(imageUrl)} alt={`Image ${index}-${imgIndex}`}
+                    <img key={imgIndex} src={imageUrl} alt={`Image ${index}-${imgIndex}`}
                     style={{
                       maxHeight: isSmallScreen && item.smallScreenHeight ? `${item.smallScreenHeight * 15}vh` : 
                         isSmallScreen ? '15vh' :
