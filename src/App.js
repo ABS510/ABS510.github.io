@@ -20,7 +20,7 @@ const App = () => {
 
   const routes = [
     { path: '/', name: 'Home' },
-    { path: '/about', name: 'About' },
+    // { path: '/about', name: 'About' },
     // Add more routes as needed
   ];
 
