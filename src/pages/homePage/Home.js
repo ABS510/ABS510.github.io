@@ -24,7 +24,7 @@ function Home({dark}) {
         <div className="container">
           <div className="content">
             <div className="home-image-container">
-              <img className="profile-image" src={"beach.png"} alt="Your Name" />   
+              <img className="profile-image" src={"profilePic1.jpeg"} alt="Akshay Sivaraman" />   
             </div>
             <div className="titles-container">
               <div>

@@ -45,7 +45,7 @@ const App = () => {
             <span className="slider"></span>
           </label>
         </div>
-        <Sidebar ref={SidebarRef} routes={routes} pic={'/beach.png'} dropDownProps={dropDownProps} dark={darkMode} toggleSwitchRef={toggleSwitchRef}/>
+        <Sidebar ref={SidebarRef} routes={routes} pic={'/ProfilePic.jpeg'} dropDownProps={dropDownProps} dark={darkMode} toggleSwitchRef={toggleSwitchRef}/>
         <div className="main-content">
           <Routes>
             <Route exact path="/" element={<Home dark={darkMode}/>} />

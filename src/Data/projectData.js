@@ -324,6 +324,89 @@ const projectsData = [
           smallScreenHeight:1.6,
         },
       ]
+    },
+    {
+      title: 'YOLO Bounding Box Predictions',
+      shortName: 'YOLO',
+      path: "/project/yolo",
+      image: 'YOLO/Yolo.png',
+      content: [
+        {
+          type: 'Text', 
+          paragraphs: [
+            "Bounding box prediction is the task of locating and classifying objects of interests within an image. \
+            One of the most influential algorithms for bounding box prediction is You Only Look Once (YOLO). \
+            Previous algorithms used for bounding box prediction involved iterating various sized boxes over the image. \
+            For each iteration, and the object detection and classification was run within the box. \ This is however very \
+            slow, as the network runs many times on the image. YOLO on the other hand requires only 1 pass over the entire image \
+            to find bounding boxes.",
+
+            "The way YOLO works is by first dividing the image into an SxS grid. For each grid, b bounding boxes are predicted. \
+            For each bounding, 5 parameters are predicted: the width, height, center position (both x and y) within that grid, and confidence. \
+            For each grid cell, a set of probabilities is also predicted for the class of object predicted within that grid. \
+            This results in a total of S x S x (C + 5b) outputs, where S is the grid size, C is the number of classes, and b is the number \
+            of bounding boxes per grid cell. While this limits the number of bounding boxes that can be predicted, the speed up of this model \
+            is significantly more than previous methods, while also allowing accurate bounding box predictions."
+          ]
+        },
+        {
+          type: 'Images',
+          images: ['YOLO/Yolo_grid.png'],
+          caption: 'J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, You Only Look Once: Unified, Real-Time Object Detection, CVPR 2016 ',
+          height:2.5,
+          smallScreenHeight:1.8,
+        },
+        {
+          heading: 'Loss',
+          type: 'Text', 
+          paragraphs: [
+            "The way the model is trained is by a unique loss function. For each box in the ground truth, there is a loss associated \
+            with the predicted width and height, center prediction, and the confidence score (the confidence should be 1). For each \
+            box that does not contain an object in the ground truth, there is a loss penalizing a high confidence score. Lastly, there \
+            is a classification component to the loss as well, for each grid cell that contains an object."
+          ]
+        },
+        {
+          type: 'Images',
+          images: ['YOLO/YoloLoss.png'],
+          caption: 'The loss function in YOLO. The components of the losses are for center regression, width and height of boxes, confidence scores, and classification scores respectively.',
+          height:2.5,
+          smallScreenHeight:1.8,
+        },
+        {
+          type: 'Text', 
+          heading: 'My Implementation',
+          paragraphs: [
+            "I trained my own YOLO classifier, by implementing the loss function, as well as the convolutional neurla network architecture. \
+            I also processed the data in order to ensure that it was in the correct format for training the network. I experimented with variosu hyperparameters \
+            and trained the model for a few epochs. For the final output, all boxes which have a confidence score greater than or equal to 0.1 were displayed. \
+            This output consists of many overlapping boxes with the same classification."
+          ]
+        },
+        {
+          type: 'Images',
+          images: ['YOLO/eg1.png', 'YOLO/Eg2.png'],
+          caption: 'Prediction of my trained models before Non-max suppression',
+          height:2.5,
+          smallScreenHeight:1.8,
+        },
+        {
+          type: 'Text', 
+          paragraphs: [
+            "To fix the issue of multiple overlapping bounding boxes, a technique knows as non-maximal suppression is used. Boxes which have \
+            large overlap (based on their Intersection over Union) will be removed, and only the most confident box will be kept. This solves \
+            mosts of the problems associated with repeating overlapping boxes for the same object. Using an IoU threshold of 0.3, and confidence \
+            threshold of 0.3, this the output of my algorthm on some other images:"
+          ]
+        },
+        {
+          type: 'Images',
+          images: ['YOLO/eg3.png', 'YOLO/eg4.png', 'YOLO/eg5.png', 'YOLO/eg6.png'],
+          caption: 'Prediction of my trained models after Non-maximal suppression',
+          height:2.5,
+          smallScreenHeight:1.8,
+        }
+      ]
     }
   ];
   
